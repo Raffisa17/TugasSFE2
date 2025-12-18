@@ -1,50 +1,101 @@
 .container {
-    width: 720px;
-    height: 380px;
-    margin: auto;
-    background-color: rgb(249, 248, 248);
+    width: 840px;
+    min-height: 420px;
+    background-color: rgb(240, 240, 240);
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
     display: flex;
-    flex-direction: row;
-    font-family: Arial, Helvetica, sans-serif
-}
-
-.containerImage {
-    width: 540px;
+    font-family: 'Poppins', sans-serif;
 }
 
 .photo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    position: absolute;
+    top: 50%;
+    right: 40px;
+    transform: translateY(-50%);
 }
 
-img {
-    background-color: rgb(249, 248, 248);
-    justify-content: center;
-    align-items: center;
-    width: 250px;
-    height: 250px;
-    border-radius: 50px;
+.photo img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
     object-fit: cover;
 }
 
 body {
-    /* taruh item di tengah */
     margin: 0;
     min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
 
-    /* background */
     background-image: url(background.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
+
+.biodata {
+    list-style: none;
+    padding: 12px 12px;
+    width: 550px;
+
+    border: 1.5px solid #ddd;
+    border-radius: 1px;
+    background-color: #fff;
+}
+
+.about {
+    text-align: left;
+    line-height: 1.6;
+    margin: 12px 0 20px 0;
+    color: #444;
+}
+
+.hobi-list {
+    list-style: none;
+    display: flex;
+    gap: 20px;       /* jarak antar item */
+    padding: 0;
+    margin: 8px 0 0 0;
+    width: 100%;
+    justify-content: center
+
+}
+
+.hobi-list li {
+    padding: 6px 12px;
+    border-radius: 20px;
+    background: #b6ebf4;
+    font-size: 14px;
+}
+
+.divider {
+    height: 5px;
+    width: 320px;
+    background: #5ac8fa;
+    border-radius: 2px;
+    margin: 12px 0;
+}
+
+.title span {
+    color: #5ac8fa;
+}
+
+.card-title {
+    text-align: center;
+    margin-bottom: 30px;
+    letter-spacing: 1px; 
+    color: rgb(85, 126, 154);
+}
+
+
+.content {
+    max-width: 70%;
+}
+
 
 
 
